@@ -3,6 +3,7 @@
 import { Search, Star } from "lucide-react";
 import { useMemo, useState } from "react";
 import type { GithubRepo } from "@/lib/github";
+import { formatStars } from "@/lib/format";
 
 type RepoGalleryClientProps = {
   repos: GithubRepo[];
@@ -105,7 +106,7 @@ export const RepoGalleryClient = ({ repos }: RepoGalleryClientProps) => {
 
                 <div className="flex items-center gap-1.5 text-amber-300">
                   <Star className="h-4 w-4" aria-hidden="true" />
-                  <span>{repo.stargazers_count}</span>
+                  <span>{formatStars(repo.stargazers_count)}</span>
                 </div>
               </div>
             </article>
