@@ -1,3 +1,15 @@
+# GitHub Repository Cards
+
+Next.js page that fetches and displays GitHub repositories with search filtering.
+
+## Live Demo
+https://hdr-github-repository-card-list.vercel.app/
+
+## AI Usage Note
+
+I used Cursor Agent Mode to scaffold the Next.js page, create the repo cards, and add search, loading, and error states. The AI handled most of the component structure and Tailwind styling well, but it couldn’t install Lucide icons, so I added them manually. I also noticed accessibility issues and prompted the AI to improve semantic HTML, ARIA attributes, keyboard navigation, and color contrast. Overall, the AI saved time on setup, but I corrected the library configuration and improved accessibility for a more polished result.
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
