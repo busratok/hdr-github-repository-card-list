@@ -24,13 +24,17 @@ const Home = async ({ searchParams }: HomePageProps) => {
             Public Repositories for{" "}
             <span className="text-cyan-400">@{result.username}</span>
           </h1>
-          <p className="max-w-2xl text-sm text-zinc-400 sm:text-base">
+          <p className="max-w-2xl text-sm text-zinc-300 sm:text-base">
             Browse repositories and filter instantly by name with local search.
           </p>
         </header>
 
         {!result.ok ? (
-          <section className="mx-auto max-w-2xl rounded-2xl border border-rose-400/30 bg-rose-500/10 p-6 text-rose-100">
+          <section
+            className="mx-auto max-w-2xl rounded-2xl border border-rose-400/30 bg-rose-500/10 p-6 text-rose-100"
+            role="alert"
+            aria-live="polite"
+          >
             <div className="mb-3 flex items-center gap-2 text-lg font-semibold">
               <AlertTriangle className="h-5 w-5" aria-hidden="true" />
               Something went wrong
